@@ -1,0 +1,128 @@
+.main {
+  margin-top: 10vh;
+  max-width: 100%;
+
+  &__container {
+    padding: 2em 0;
+  }
+  &__categories {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    &--category {
+      user-select: none;
+      background-color: #f5f5f5;
+      color: #000;
+      padding: 7px 15px;
+      border-radius: 15px;
+      margin: 0 5px 0 35px;
+      min-width: auto;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.1s;
+      text-decoration: none;
+
+      &:hover {
+        background-color: rgb(36, 36, 36);
+        color: white;
+      }
+    }
+  }
+
+  &__videos {
+    margin: 0 0.7em;
+  }
+  &__video {
+    margin: 2.8em;
+    width: 95%;
+    &--inner {
+      display: flex;
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  iframe {
+    margin: 2em 1.6em 0 2em;
+  }
+}
+
+.pagination {
+  width: 100%;
+  margin-top: 50px;
+}
+.btns__container {
+  margin: auto;
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.disabled-btn {
+  color: gray;
+  background-color: lightgray;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+.pagination-btn {
+  color: rgb(36, 36, 36);
+  background-color: rgb(219, 219, 219);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.2s;
+  &:hover {
+    color: #ffff;
+    background-color: rgb(36, 36, 36);
+  }
+}
+
+.statistics {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #909090;
+  border-bottom: 1px solid rgb(172, 171, 171);
+  padding: 10px 0;
+}
+.rate {
+  display: flex;
+  align-items: center;
+  .share {
+    margin: 0 10px;
+  }
+}
+.rate-detail {
+  display: flex;
+  align-items: center;
+
+  margin: 0px 10px;
+  svg {
+    margin: 0 5px 0 10px;
+  }
+}
+.details {
+  max-width: 853px;
+
+  margin: 0px 30px;
+}
+
+.title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+pre {
+  margin: 20px 0;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
